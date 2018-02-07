@@ -2,7 +2,16 @@ language: node_js
 node_js:
   - "node"
   - "9"
+
 env:
-  - ELECTRON_PATH='./node_modules/.bin/electron'
   - SH=bash
   - PATH=${PATH//:\.\/node_modules\/\.bin/}
+
+addons:
+  apt:
+    packages:
+      - xvfb
+
+install:
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
