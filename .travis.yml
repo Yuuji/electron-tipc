@@ -2,3 +2,5 @@ language: node_js
 node_js:
   - "node"
   - "9"
+before_script:
+  - PATH=${PATH//:\.\/node_modules\/\.bin/}
