@@ -2,5 +2,7 @@ language: node_js
 node_js:
   - "node"
   - "9"
-before_script:
+env:
+  - ELECTRON_PATH='./node_modules/.bin/electron'
+  - SH=bash
   - PATH=${PATH//:\.\/node_modules\/\.bin/}

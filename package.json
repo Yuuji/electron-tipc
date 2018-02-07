@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "npm run-script test-main ; npm run-script test-renderer",
-    "test-main": "ELECTRON_PATH='./node_modules/.bin/electron' electron-mocha ./tests/test-main/test",
-    "test-renderer": "ELECTRON_PATH='./node_modules/.bin/electron' electron-mocha --renderer --require-main ./tests/test-renderer/main-preload.js ./tests/test-renderer/test"
+    "test-main": "electron-mocha ./tests/test-main/test",
+    "test-renderer": "electron-mocha --renderer --require-main ./tests/test-renderer/main-preload.js ./tests/test-renderer/test"
   },
   "repository": {
     "type": "git",
