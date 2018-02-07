@@ -1,0 +1,32 @@
+{
+  "name": "election-tipc",
+  "version": "0.0.1",
+  "description": "Transparent ipc communication between clients and server for electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron-mocha ./tests/test-main/test && electron-mocha --renderer --require-main ./tests/test-renderer/main-preload.js ./tests/test-renderer/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuuji/electron-tipc.git"
+  },
+  "keywords": [
+    "electrom",
+    "ipc"
+  ],
+  "author": "Mia Sophie Moeller <m.moeller@bytevision.net>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Yuuji/electron-tipc/issues"
+  },
+  "homepage": "https://github.com/Yuuji/electron-tipc#readme",
+  "dependencies": {
+    "electron": "",
+    "socket.io": ""
+  },
+  "devDependencies": {
+    "electron-mocha": "^5.0.0",
+    "mocha": "^5.0.0",
+    "should": "^13.2.1"
+  }
+}
